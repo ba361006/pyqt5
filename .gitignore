@@ -1,2 +1,8 @@
-.vs_code/*
-__pycache__/*
+**/__pycache__
+logs/
+.vscode/
+.idea/
+*.spec
+dist/
+build/
+
