@@ -23,6 +23,7 @@ class UsbRelay():
         # sending Hexadecimal code A0 01 01 A2 to open relay
         self.__open = [0xA0,0x01,0x01,0xA2]
 
+
         # sending Hexadecimal code A0 01 00 A1 to open relay
         self.__close = [0xA0,0x01,0x00,0xA1]
     
@@ -41,7 +42,7 @@ class UsbRelay():
         Edited by: [2020-10-13] [Bill Gao]
         """        
         self.serial.write(self.__open)
-        self.serial.close()
+        # self.serial.close()
     
     def close(self):
         """
@@ -58,9 +59,9 @@ class UsbRelay():
         Edited by: [2020-10-13] [Bill Gao]
         """   
         self.serial.write(self.__close)
-        self.serial.close()
+        # self.serial.close()
 
 Relay = UsbRelay(5)
-# Relay.open()
-Relay.close()
+Relay.open()
+# Relay.close()
 

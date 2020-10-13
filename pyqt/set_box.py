@@ -9,7 +9,6 @@ class Example(QWidget):
 
 
     def initUI(self):
-
         okButton = QPushButton("OK")
         cancelButton = QPushButton("Cancel")
 
