@@ -56,7 +56,7 @@ Qt Designer is a tool for quickly building graphical user interfaces with widget
         <div align="center">  or </div>
     
         > pyuic -o YOUR_PI_FILE.py YOUR_UI_FILE.py
-        
+
         <br>
 
         - For VS Code:
